@@ -1,6 +1,6 @@
 # Darwinbox HRMS MCP Server
 
-[![Darwinbox MCP Demo](https://img.youtube.com/vi/h8-0w5D8A7w/maxresdefault.jpg)](https://www.youtube.com/watch?v=h8-0w5D8A7w)
+[![Darwinbox MCP Demo](https://i.ytimg.com/vi/h8-0w5D8A7w/hqdefault.jpg)](https://www.youtube.com/watch?v=h8-0w5D8A7w)
 
 The Darwinbox-MCP Server is a unified interface replacing traditional APIs for interacting with LLMs and agents. It abstracts underlying AI logic and provides context-aware routing across HR workflows. Built for modularity, it enables seamless integration of intelligent agents into Darwinbox.
 
