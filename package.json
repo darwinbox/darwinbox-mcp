@@ -1,0 +1,48 @@
+{
+  "name": "darwinbox-mcp",
+  "version": "0.1.0",
+  "description": "The Darwinbox-MCP Server is a unified interface replacing traditional APIs for interacting with LLMs and agents. It abstracts underlying AI logic and provides context-aware routing across HR workflows. Built for modularity, it enables seamless integration of intelligent agents into Darwinbox.",
+  "private": false,
+  "type": "module",
+  "author": {
+    "name": "Darwinbox Private Limited",
+    "email": "opensource@darwinbox.io",
+    "url": "https://darwinbox.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darwinbox/darwinbox-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/darwinbox/darwinbox-mcp/issues"
+  },
+  "homepage": "https://github.com/darwinbox/darwinbox-mcp#readme",
+  "keywords": [
+    "darwinbox",
+    "hrms",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "llm"
+  ],
+  "bin": {
+    "darwinbox-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
